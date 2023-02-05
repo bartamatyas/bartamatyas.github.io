@@ -10,7 +10,7 @@ magyarExp = ["Magyar",": A teljes magyar ABC, minden ékezetes és kettős/hárm
 magyarABC = ["A", "Á", "B","C", "Cs","D", "Dz", "Dzs", "E", "É", "F", "G", "Gy", "H", "I", "Í", "J", "K", "L", "Ly", "M", "N", "Ny", "O", "Ó", "Ö", "Ő", "P", "Q", "R", "S", "Sz", "T", "Ty", "U", "Ú", "Ü", "Ű", "V", "W", "X", "Y", "Z", "Zs"]
 
 magyarEgybevontExp = ["Magyar egybevont",": A magyar ABC az X és Y nélkül, az ékezetes magánhangzókat egybevonva (A/Á), a kettős/hármas betűk és a W egybevonva a kezdő betűjükkel (D/DZ/DZS). Az U és Ü valamint az O és Ö külön betűként vannak értelmezve."]
-magyarEgybevont = ["A/Á", "B", "C/Cs", "D/Dz/Dzs", "E/É", "F", "G/Gy", "H", "I/Í", "J", "K", "L/Ly", "M", "N/Ny", "O/Ó, Ö/Ő", "P", "Q", "R", "S/Sz", "T/Ty", "U/Ú, Ü/Ű", "V/W", "Z/Zs"]
+magyarEgybevont = ["A/Á", "B", "C/Cs", "D/Dz/Dzs", "E/É", "F", "G/Gy", "H", "I/Í", "J", "K", "L/Ly", "M", "N/Ny", "O/Ó", "Ö/Ő", "P", "Q", "R", "S/Sz", "T/Ty", "U/Ú", "Ü/Ű", "V/W", "Z/Zs"]
 
 custom = []
 customExp = ["Egyéni",": Csinálj egyedi ABC-t a meglévők módosításával, vagy a semmiből"]
