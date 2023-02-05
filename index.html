@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ország Város</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div id="showBackground">
+        <div id="show">
+            <div id="letter"></div>
+            <button id="nextLetter" class="btn" onclick="next()">Következő</button>
+            <button id="reload" class="btn" onclick="location.reload()">Befejezés</button>
+        </div>
+    </div>
+
+    <h3>Ez egy web-program az ABC betűinek véletlenszerű visszaadására, elsősorban Ország-város játék segédletekének készült.</h3>
+    <h1>ABC Lehetőségek</h1>
+    <button class="btn" onclick="pickAlphabet(englishAlphabet,englishExp)" onmouseout="hoverEnd()" onmouseover="hoverInfo(englishExp)" >Angol</button>
+    <button class="btn" onclick="pickAlphabet(englishSimplified,englishSimplifiedExp)" onmouseout="hoverEnd()" onmouseover="hoverInfo(englishSimplifiedExp)">Angol egyszerűsített</button>
+    <button class="btn" onclick="pickAlphabet(magyarABC,magyarExp)" onmouseout="hoverEnd()" onmouseover="hoverInfo(magyarExp)">Magyar</button>
+    <button class="btn" onclick="pickAlphabet(magyarEgybevont,magyarEgybevontExp)" onmouseout="hoverEnd()" onmouseover="hoverInfo(magyarEgybevontExp)">Magyar egybevont</button>
+    <button class="btn" onclick="customToggle(1)" onmouseout="hoverEnd()" onmouseover="hoverInfo(customExp)">Egyéni</button>
+
+    <h2 id="info">Vidd az kurzort a választható ABC fölé, vagy kattints rá, hogy több információt tudj meg róla</h2>
+
+    <button id="beginBtn" class="btn" onclick="begin()">Kezdés betűk nélkül</button>
+
+<div id="customBackground">
+<div id="customField">
+
+    <h1>Egyéni ABC alkotó</h1>
+    <p>Írj be tetszőleges betűket az alábbi input mezőbe a szögletes zárójelek ([]) közé, idézőjelekkel ("") és vesszővel (,) elválasztva úgy mint az alatta lévő példákban. <br> Fontos, hogy a példában szereplő idézőjelet használd és ne a magyarban használtat („ ”) ha valami nem jól van beírva akkor előfordulhat, hogy a játék nem fog rendeltetés szerűen működni. <br>Miután kitöltötted a mezőt és szeretnéd többször is használni az egyéni ABC-d akkor másold ki magadnak egy szövegszerkesztőbe, mert miután elkezdted a játékod később nem lesz rá lehetőséged és a játék végén elveszíted.<br>Ha az Egyéni ABC Megtekintése gomb kattintásakor nem frissül a példa, akkor valami hiba van a kitöltésben.</p>
+    <h3>Input mező:</h3>
+    <input type="text" id="customInput" value='["A", "B", "C"]'>
+    <button class="btn" onclick="createCustom()">Egyéni ABC megtekintése</button>
+    <div id="showcase">A,B,C</div>
+
+    <h3>Példa ABC-k:</h3>
+    <p>["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]</p>
+    <p>["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "Z"]</p>
+    <p>["A", "Á", "B","C", "Cs","D", "Dz", "Dzs", "E", "É", "F", "G", "Gy", "H", "I", "Í", "J", "K", "L", "Ly", "M", "N", "Ny", "O", "Ó", "Ö", "Ő", "P", "Q", "R", "S", "Sz", "T", "Ty", "U", "Ú", "Ü", "Ű", "V", "W", "X", "Y", "Z", "Zs"]</p>
+    <p>["A/Á", "B", "C/Cs", "D/Dz/Dzs", "E/É", "F", "G/Gy", "H", "I/Í", "J", "K", "L/Ly", "M", "N/Ny", "O/Ó, Ö/Ő", "P", "Q", "R", "S/Sz", "T/Ty", "U/Ú, Ü/Ű", "V/W", "Z/Zs"]</p>
+    <button class="btn" onclick="customToggle()">Vissza</button>
+    <button class="btn" onclick="customStart()">Kezdés az egyéni ABC-vel</button>
+
+</div>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
