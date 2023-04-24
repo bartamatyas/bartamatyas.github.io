@@ -1,0 +1,11 @@
+.imageContainer {
+    background-color: rgba(230, 167, 86, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.linkImage {
+    max-width: 49%;
+    margin: 5px;
+    border-radius: 20px;
+}
