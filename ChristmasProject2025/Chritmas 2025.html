@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas2025</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="modal11" class="modal"><h1 id="movieTestTitle" class="question">Open envelope #1 and solve the puzzle inside it, once you're done come back here and click the "I'm ready to get tested" button <a class="linkPDF" href="./Logic-grid puzzle.pdf" target="_blank">Click here for PDF version</a></h1>
+        <div id="movieContainer">
+            <img class="moviePoster" onclick="questionCheck(george)" id="george" src="./imgs/George of the Jungle.jpg" alt="George of the Jungle">
+            <img class="moviePoster" onclick="questionCheck(harriet)" id="harriet" src="./imgs/Harriet the Spy.jpg" alt="Harriet the Spy">
+            <img class="moviePoster" onclick="questionCheck(beverly)" id="beverly" src="./imgs/The Beverly Hillbillies.jpg" alt="The Beverly Hillbillies">
+            <img class="moviePoster" onclick="questionCheck(beethoven)" id="beethoven" src="./imgs/Beethoven.jpg" alt="Beethoven">
+            <img class="moviePoster" onclick="questionCheck(lips)" id="lips" src="./imgs/Our Lips Are Sealed.jpg" alt="Our Lips Are Sealed">
+        </div>
+        <button class="nextBtn" id="nextbutton10" onclick="testMe()" style="display: block;"><h2>I'm ready to get tested</h2></button>
+        <button class="nextBtn" id="nextbutton10b" onclick="nextPage()" style="display: none;"><h2>Next</h2></button></div>
+
+    <div id="modal12" class="modal"><h1 class="question">Unfortunately your reward is hidden by a simple code, in order to solve it you can open envelope #2 which contains a larger sample of text you can decode, if you are stuck and feel frustrated you can ask for hints, but I assure you, it can be figured out without a single hint. Good luck <a class="linkPDF" href="./Code sample.pdf" target="_blank">Click here for PDF version</a></h1>
+        <h1 class="question">Reward: VjgNqecvkqpQhAqwtTgyctfKuOctmgfDaCpZPgzvVqVjgEjtkuvocuVtgg</h1>
+        <h1 id="hintContainer" style="display: none;" class="question"></h1>
+        <button class="nextBtn" id="nextbutton11" onclick="getHint()" style="display: block;"><h2>Give Me a Hint</h2></button></div>
+
+    <h2 id="lifeContainer"><img id="heart1" class="hearts" src="./imgs/Heart.png" alt="Heart">
+        <img id="heart2" class="hearts" src="./imgs/Heart.png" alt="Heart">
+        <img id="heart3" class="hearts" src="./imgs/Heart.png" alt="Heart"></h2>
+
+    <div id="modal0" class="modal">
+        <h1 class="question">First you're going to get tested on your geography knowledge, I hope you kept up with your practice. You'll have to select flags based on questions provided for you, if you miss 3 times, you'll have to start over again. Good luck</h1>
+        <button class="nextBtn" id="nextbutton0" onclick="nextPage()"><h2>Start</h2></button></div>
+    <div id="modal1" class="modal"></div>
+    <div id="modal2" class="modal"></div>
+    <div id="modal3" class="modal"></div>
+    <div id="modal4" class="modal"></div>
+    <div id="modal5" class="modal"></div>
+    <div id="modal6" class="modal"></div>
+    <div id="modal7" class="modal"></div>
+    <div id="modal8" class="modal"></div>
+    <div id="modal9" class="modal"></div>
+    <div id="modal10" class="modal">
+        <h1 class="question">You Won</h1>
+        <button class="nextBtn" id="nextbutton10" onclick="nextPage()" style="display: block;"><h2>Next</h2></button>
+        <div class="container">
+    </div>
+
+    <script src="flags.js"></script>
+    <script src="./movieTest.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
