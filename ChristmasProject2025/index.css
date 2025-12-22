@@ -1,4 +1,7 @@
-body {background-color: darkred;}
+body {
+    background-color: darkred;
+    background-image: url(./imgs/XMasBackground.png);
+}
 
 #lifeContainer {
     display: none;
@@ -28,7 +31,8 @@ body {background-color: darkred;}
     top: 0;
     overflow: auto;
     width: 100%;
-    height: 100%;}
+    height: 100%;
+    transition: background-color 0.2s}
 
 #modal0 {display: block}
 #nextbutton0 {display: block}

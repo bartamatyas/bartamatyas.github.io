@@ -15,10 +15,11 @@ let lips = [2000, 5.2];
 
 let hints = [
     "The English alphabet is: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
-    "Each coded letter should have a match in the English alphabet, I recommend writing the ones you discovered down and look for a pattern",
+    "Each coded letter should have a match in the English alphabet, I recommend writing the ones you've discovered down and look for a pattern",
     "The sample text is a song",
     "The sample text is related to christmas",
-    "I wouldn't consider looking up the song on the internet cheating",
-    "Ceasar +2",
-    "Just google the last hint"
+    "I wouldn't consider it cheating, if you looked up the lyrics to the song on the internet",
+    "The next hint is going to be the last one, and it will probably reveal too much, so unless you want to essentially give up, don't ask for any more hints",
+    "Ceasar +2"
+    
 ]

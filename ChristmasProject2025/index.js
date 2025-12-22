@@ -87,6 +87,8 @@ function fillModals() {
   }
 };
 
+let mistakeCounter = 0
+
 function pick(pageNumber, flagNumberTrue) {
   if (checkFlagTrue(pageNumber, flagNumberTrue) === true) {
     document.getElementById("modal"+pageNumber+"card"+flagNumberTrue).className = "cardsPicked"
@@ -102,6 +104,8 @@ function pick(pageNumber, flagNumberTrue) {
     document.getElementById("modal"+pageNumber+"description"+flagNumberTrue).style.display = "block"
     lives --
     showLives()
+    mistakeCounter ++
+    document.getElementById("mistakes").innerHTML = mistakeCounter
   }
   else {console.log("something went wrong")}
 };
@@ -182,18 +186,21 @@ function nextQuestion() {
   }
 };
 
+function turnGray() {
+  document.getElementById("modal11").style.backgroundColor = "gray"
+};
+
 function questionCheck(movieTitle) {
 
-  if (movieQuestionsPart2[movieRandomizer[part2]] === movieTitle[0]) {
+  if (movieQuestionsPart2[movieRandomizer[part2]] === movieTitle[0] || movieQuestionsPart2[movieRandomizer[part2]] === movieTitle[1]) {
     part2 ++
     nextQuestion()
-  }
-  else if (movieQuestionsPart2[movieRandomizer[part2]] === movieTitle[1]) {
-    part2 ++
-    nextQuestion()
+    document.getElementById("modal11").style.backgroundColor = "rgb(69, 171, 72)"
+    setTimeout(turnGray, 500)
   }
   else {
-    console.log("false")
+    document.getElementById("modal11").style.backgroundColor = "rgb(169, 42, 42)"
+    setTimeout(turnGray, 500)
   }
 };
 
@@ -220,5 +227,6 @@ function getHint() {
 fillModals()
 movieRand()
 
-// Haven't made a fail consequence for losing the movie test
-// Nor did I make getting the question right obvious
+// I should make it so flags that are wrong answers can't be clicked more than once, because it's possible to lose all lives on a single wrong answer right now, I have a solution in mind for it, but I not sure whether I'M going to have the time to implement it
+// I haven't made a fail consequence for losing the movie test, but I guess that's alright, I hink it's more forgiving this way
+// I want to make the writing better

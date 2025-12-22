@@ -77,7 +77,7 @@ const flags = [
 
         flag2: {
             name: "CaliforniaRepublicBojackHorseman",
-            description: "California Republic portrayed in Bojack Horseman",
+            description: "California Republic portrayed in BoJack Horseman",
             rightAnswer: false,
         },
 
